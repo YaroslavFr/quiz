@@ -66,12 +66,64 @@
 <body>
 
 <header>
-    <h1>Вопросы и ответы</h1>
+    <h1>Игровой сайт: Вопросы и ответы</h1>
 </header>
 
 <div class="container">
-    <a href="/questions/">Вопросы</a>
+    <div class="question">
+        <h2>Вопрос 1: Какой язык программирования используется для веб-разработки?</h2>
+        <div class="answers">
+            <div class="answer" data-correct="false">Python</div>
+            <div class="answer" data-correct="true">JavaScript</div>
+            <div class="answer" data-correct="false">Java</div>
+            <div class="answer" data-correct="false">C++</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <h2>Вопрос 2: Какой элемент HTML используется для создания ссылок?</h2>
+        <div class="answers">
+            <div class="answer" data-correct="true">&lt;a&gt;</div>
+            <div class="answer" data-correct="false">&lt;link&gt;</div>
+            <div class="answer" data-correct="false">&lt;href&gt;</div>
+            <div class="answer" data-correct="false">&lt;url&gt;</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <h2>Вопрос 3: Какой из следующих фреймворков является фреймворком JavaScript?</h2>
+        <div class="answers">
+            <div class="answer" data-correct="true">React</div>
+            <div class="answer" data-correct="false">Django</div>
+            <div class="answer" data-correct="false">Rails</div>
+            <div class="answer" data-correct="false">Flask</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <h2>Вопрос 4: Какой цвет формирует физика в свете?</h2>
+        <div class="answers">
+            <div class="answer" data-correct="false">Кирпичный</div>
+            <div class="answer" data-correct="true">Синий</div>
+            <div class="answer" data-correct="false">Лиловый</div>
+            <div class="answer" data-correct="false">Оранжевый</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <h2>Вопрос 5: Какой из следующих океанов является самым большим?</h2>
+        <div class="answers">
+            <div class="answer" data-correct="true">Тихий океан</div>
+            <div class="answer" data-correct="false">Атлантический океан</div>
+            <div class="answer" data-correct="false">Индийский океан</div>
+            <div class="answer" data-correct="false">Северный Ледовитый океан</div>
+        </div>
+    </div>
+
+    <button id="submit">Отправить ответы</button>
+    <h2 id="score" style="margin-top: 20px;"></h2>
 </div>
+
 <script>
     const answers = document.querySelectorAll('.answer');
     let score = 0;
