@@ -1,3 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    margin: 20px 0;
+}
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.question {
+    margin: 20px 0;
+}
+.question h2 {
+    background: #f0f0f0;
+    padding: 10px;
+    border-left: 5px solid #4CAF50;
+}
+.answers {
+    margin-top: 10px;
+}
+.answer {
+    background: #e7e7e7;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.answer:hover {
+    background: #d4d4d4;
+}
+.correct {
+    background: #c8e6c9; /* Зеленый цвет для правильного ответа */
+}
+.incorrect {
+    background: #ffccbc; /* Красный цвет для неправильного ответа */
+}
