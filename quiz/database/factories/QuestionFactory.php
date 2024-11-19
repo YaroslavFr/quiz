@@ -17,11 +17,11 @@ class QuestionFactory extends Factory
     public function definition(): array
     {
         return [
-                        'title'=>$this->faker->title('5'),
-                        'question'=>$this->faker->text(20),
-                        'answer'=>$this->faker->text(20),
-                        'image'=>'',
-                        'is_published'=>true
+            'title'=>$this->faker->title('5'),
+            'question'=>$this->faker->text(20),
+            'answer'=>$this->faker->text(20),
+            'image'=>'',
+            'is_published'=>true
         ];
     }
 }

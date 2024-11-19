@@ -70,6 +70,9 @@
 </header>
 
 <div class="container">
+    @foreach($users as $user)
+        <?echo '123';?>
+    @endforeach;
     <div class="question">
         <h2>Вопрос 1: Какой язык программирования используется для веб-разработки?</h2>
         <div class="answers">

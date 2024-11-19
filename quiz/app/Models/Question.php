@@ -9,5 +9,9 @@ class Question extends Model
 {
     use HasFactory;
 
-
+    public function index(){
+        $questions = Questions::all();
+        dd($questions);
+        // return view('/question',compact('questions'));
+    }
 }

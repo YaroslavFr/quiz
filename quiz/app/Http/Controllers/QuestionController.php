@@ -7,9 +7,8 @@ use App\Models\Question;
 
 class QuestionController extends Controller
 {
-    public function __invoke()
+    public function test()
     {
-        $questions = Question::paginate(1);
-        return view('question');
+        return view('questions');
     }
 }

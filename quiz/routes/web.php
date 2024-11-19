@@ -1,11 +1,10 @@
 <?php
 
+use App\Http\Controllers\QuestionController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/question', function () {
-    return view('question');
-});
+Route::get('/questions', [QuestionController::class,'test']);
